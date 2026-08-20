@@ -102,18 +102,24 @@ Being direct about scope matters more here than in a generic ML demo, because th
 
 ```
 surgical-instrument-segmentation/
+├── data/ # not tracked in git - see download instructions above
+│ ├── images/
+│ └── masks/
 ├── models/
-│   └── best_model.pth
+│ └── best_model.pth
 ├── results/
-│   ├── history.json
-│   ├── training_curves.png
-│   ├── tta_comparison.json
-│   ├── uncertainty_maps.png
-│   ├── acquisition_ranking.json
-│   └── dashboard_demo.gif
+│ ├── history.json
+│ ├── training_curves.png
+│ ├── tta_comparison.json
+│ ├── uncertainty_maps.png
+│ ├── acquisition_ranking.json
+│ └── demo_prediction.gif
 ├── notebooks/
-│   ├── surgical_instrument_segmentation_full_output.ipynb   # with all cell outputs (plots, logs) rendered
-│   └── surgical_instrument_segmentation_clean.ipynb          # same code, outputs cleared, easier to read/diff
+│ ├── surgical_instrument_segmentation_full_output.ipynb
+│ └── surgical_instrument_segmentation_clean.ipynb
+├── src/
+│ └── dashboard.py # local Gradio dashboard (image + video inference)
+├── requirements.txt
 └── README.md
 ```
 
