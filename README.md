@@ -54,6 +54,8 @@ The final model was then trained for 30 epochs on the full training set with thi
 
 Training curves (loss and Dice over 30 epochs) are in `results/training_curves.png`.
 
+![Training Curves](results/training_curves.png)
+
 ### Test-time augmentation (TTA)
 
 At inference, each frame is also run through horizontal flip, vertical flip, and 90° rotation, and the four predictions are averaged. This improved test-set Dice from 0.9324 to 0.9415 — a modest but consistent gain, and the averaging step is cheap enough to keep in a real-time pipeline if the frame budget allows it.
