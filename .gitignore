@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Raw screen recording (not needed in repo, only the final GIF is)
+results/dashboard_demo.mp4
+results/dashboard_video_output.mp4
+
+# Only keep the best model checkpoint
+models/last_model.pth
+
+# Dataset (public dataset, downloaded separately — see README)
+data/
+
+# IDE
+.vscode/
+.idea/
